@@ -16,7 +16,7 @@ In this section, you will login to your own IBM Cloud account, and then get acce
 
 6. Switch to the **78003** account by clicking on the account selection drop down in the top nav bar.
 
-   ![IBM Account](.gitbook/assets/ibmaccount.png)
+   ![IBM Account](https://dsc.cloud/quickshare/Shared-Image-2019-09-16-13-48-57.png)
 
 7. Click on **Kubernetes Clusters** in the Resource Summary tile.
 

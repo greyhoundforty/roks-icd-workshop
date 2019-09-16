@@ -8,10 +8,10 @@ $ ibmcloud resource service-instance-create <Your-Etcd-Service-Name> databases-f
 ## Generate Credentials for ICD
 In order for our OpenShift app to talk to our ICD instance, we'll need to generate some service credentials that we can use as container secrets. 
 
-1. Go to your ICD instance page, on the left hand navigation click `Service Credentials` 
+**Go to your ICD instance page, on the left hand navigation click `Service Credentials`**
 
 ![](https://dsc.cloud/quickshare/icd-service-creds.png)
 
-2. Click on New Credentials, give your credentials a unique name and click `Add`
+**Click on New Credentials, give your credentials a unique name and click `Add`**
 
 ![](https://dsc.cloud/quickshare/Shared-Image-2019-09-16-13-41-40.png)

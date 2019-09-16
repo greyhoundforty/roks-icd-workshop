@@ -1,4 +1,4 @@
-# Table of contents
+# Summary
 
 * [Workshop](README.md)
     * [Create account and get cluster](GETSTARTED.md)

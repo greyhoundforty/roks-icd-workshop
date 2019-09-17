@@ -1,40 +1,38 @@
-# Exercise 2: Metrics and Dashboards
+# Exercise 2: Logging and Monitoring
 
-In this exercise, we'll explore the third-party monitoring and metrics dashboards that are installed for free with OpenShift!
+In this exercise, we'll explore the out-of-the-box logging and monitoring capabilities that are offered in OpenShift.
 
-## Grafana
+## OpenShift Logging
 
-Red Hat OpenShift on IBM Cloud comes with [Grafana](https://grafana.com/) preinstalled. Get started by switching to the `Cluster Console` view:
+Since we only created one pod, seeing our logs will be straight forward. Navigate to `Applications > Pods` menu on the left on the console. You'll see two pods here, one for the build \(that's already :heavy_check_mark: Completed\), and one for the pod that is running your application.
 
-![Cluster Console](https://dsc.cloud/quickshare/console-cluster-view.png)
+![Pods](#)
 
-Then Navigate to `Monitoring > Dashboards` in the left-hand bar. You'll be asked to login with OpenShift and then click through some permissions.
+Click into the `Running` pod and navigate to the `Logs` tab. You should see the Node.js application start-up logs, as well as periodic logs from your curl loop.
 
-![Monitoring Dashboards](https://dsc.cloud/quickshare/metrics.png)
+![Logs](#)
 
-You should then see your Grafana dashboard. Hit `Home` on the top left, and choose `K8s / Compute Resources / Namespace`.
+## OpenShift Terminal
 
-![Grafana](https://dsc.cloud/quickshare/grafana-namespace.png)
+One of the great things about Kuberentes is the ability to quickly debug your application pods with SSH terminals. This is great for development, but generally is not recommended in production environments. OpenShift makes it even easier by allowing you to launch a terminal directly in the dashboard.
 
-Choose the name of the project you created in Step 1 - the same one that your application is running inside.
+Switch to the `Terminal` tab, and run the following commands.
 
-You should be able to see the CPU and Memory usage for your application. In production environments, this is helpful for identifying the average amount of CPU or Memory your application uses, especially as it can fluctuate through the day. We'll use this information in the next exercise to set up auto-scaling for our pods.
+```bash
+# This command shows you the the project files.
+$ ls
+# This command shows you the running processes.
+$ ps aux
+```
 
-![Grafana also project](https://dsc.cloud/quickshare/grafana-graph.png)
+![Terminal](#)
 
-## Promtheus and Alert Manager
+## OpenShift Monitoring
 
-Navigating back to the cluster console, you can also launch:
+When deploying new apps, making configuration changes, or simply inspecting the state of your cluster, the OpenShift monitoring dashboard gives you an overview of your running assets. Access the Dashboard now by going to the `Monitoring` tab on the left side menu.
 
-* **[Prometheus](https://prometheus.io/)** - a monitoring system with an efficient time series database
-* **[Alertmanager](https://prometheus.io/docs/alerting/alertmanager/)** - an extension of Prometheus focused on managing alerts
+You can also dive in a bit deeper - the `Events` view is very useful for identifying the timeline of events and finding potential error messages. Hit the 'View Details' button on the top right.
 
-![Metrics, Alerts and Dashboards]()
+![View Details](#)
 
-## Prometheus
-
-![Prometheus](https://dsc.cloud/quickshare/prometheus-graph.png)
-
-## Alertmanager
-
-![Alert Manager]()
+You'll want to refer to this view throughout the lab. Almost all actions we take in in OpenShift will result in an event being fired in this view. As it is updated real-time, it's a great way to track changes to state.

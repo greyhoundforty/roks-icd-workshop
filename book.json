@@ -1,4 +1,4 @@
 {
     "root": "./workshop",
-    "plugins": ["hints"]
+    // "plugins": ["hints"]
 }

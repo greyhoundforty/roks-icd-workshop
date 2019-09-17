@@ -10,7 +10,9 @@ First, let's simulate some load on the application so we can gather metrics in G
 while sleep 1; do curl -s <your_app_route>/info ; done
 ```
 
-*Note: Retrieve the external URL from the OpenShift console. We're hitting the `/info` endpoint which will trigger some logs from our app and help drive up utilization*
+*Note: Retrieve the external URL from the OpenShift console. 
+
+We're hitting the `/info` endpoint which will trigger some logs from our app and help drive up utilization*
 With that running in the background we'll take a look at the built in monitoring and logging tools.
 
 ## Grafana

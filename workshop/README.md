@@ -6,29 +6,27 @@ Red Hat OpenShift represents a common platform, based on the industry-standard K
 
 In this lab we'll cover using the OpenShift platform on the IBM Cloud and the common developer loop around cloud native applications including:
 
- - Kubernetes Basics
- - OpenShift Basics
- - Deploying an IBM Cloud Database 
- - Deploying an application
-   - Source-to-Image (s2i)
- - Reading logs and monitoring the application
-   - Console Logs
-   - Terminal logs 
- - Grafana
- - Scaling the application
-   - Resource Limits
-   - Horizontal Pod Autoscaler
- - Health Checks
-   - Setting up Liveness and Readiness Probes
-   - Introducing failure 
-
-## Hands On
+* Kubernetes Basics
+* OpenShift Basics
 * [Deploy ICD Instance](ICD.md)
 * [Create account and get cluster](GETSTARTED.md)
 * [Create ICD Credentials](CREATE_CREDS.md)
 * [Setup CLI Access for the cluster](exercise-0/README.md)
 * [Exercise 1: Using OpenShift](exercise-1/README.md)
+   * Creating a project
+   * Adding a Secret to a project
+   * Deploying application via Service Catalog
 * [Exercise 2: Logging and Monitoring](exercise-2/README.md)
+   * Console Logs
+   * Terminal logs 
 * [Exercise 3: Metrics and Dashboards](exercise-3/README.md)
+   * Generate load on application
+   * Grafana
 * [Exercise 4: Autoscale Pods](exercise-4/README.md)
+   * Resource Limits
+   * Horizontal Pod Autoscaler
 * [Exercise 5: Liveness and Readiness Probes](exercise-5/README.md)
+   * Setting up Liveness and Readiness Probes
+   * Introducing failure 
+
+

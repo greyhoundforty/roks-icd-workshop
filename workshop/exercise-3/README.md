@@ -2,6 +2,25 @@
 
 In this exercise, we'll explore the third-party monitoring and metrics dashboards that are installed for free with OpenShift!
 
+## Simulate Load on the Application
+First, let's simulate some load on the application so we can gather metrics in Grafana that we'll use in later to set up `Resource Limits`. Jump to your local terminal and run the following script which will endlessly spam our app with requests: 
+
+
+```bash
+while sleep 1; do curl -s <your_app_route>/info ; done
+```
+
+## Simulate Load on the Application
+First, let's simulate some load on our application. Jump to your local terminal and run the following script which will endlessly spam our app with requests: 
+
+
+```bash
+while sleep 1; do curl -s <your_app_route>/info ; done
+```
+
+*Note: Retrieve the external URL from the OpenShift console. We're hitting the `/info` endpoint which will trigger some logs from our app and help drive up utilization*
+With that running in the background we'll take a look at the built in monitoring and logging tools.
+
 ## Grafana
 
 Red Hat OpenShift on IBM Cloud comes with [Grafana](https://grafana.com/) preinstalled. Get started by switching to the `Cluster Console` view:
@@ -29,7 +48,7 @@ Navigating back to the cluster console, you can also launch:
 * **[Prometheus](https://prometheus.io/)** - a monitoring system with an efficient time series database
 * **[Alertmanager](https://prometheus.io/docs/alerting/alertmanager/)** - an extension of Prometheus focused on managing alerts
 
-![Metrics, Alerts and Dashboards]()
+![Metrics, Alerts and Dashboards](https://dsc.cloud/quickshare/metrics.png)
 
 ## Prometheus
 
@@ -37,4 +56,4 @@ Navigating back to the cluster console, you can also launch:
 
 ## Alertmanager
 
-![Alert Manager]()
+![Alert Manager](https://dsc.cloud/quickshare/alertmanager.png)

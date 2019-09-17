@@ -13,7 +13,7 @@ Click on the name of your project and you will see a view like this:
 ![Default Project View](https://dsc.cloud/quickshare/initial-project-view.png)
 
 ## Add ICD service credentials to cluster
-In order for our frontend Node.js app to authenticate with our ICD instance we'll need to take the [Service credentials]() we created previously and add them as an Openshift secret. From the initial prject view click `Resources` in the left hand navigation bar and then select Secrets.
+In order for our frontend Node.js app to authenticate with our ICD instance we'll need to take the `Service credentials` we created [previously](../CREATE_CREDS.md) and add them as an Openshift secret. From the initial prject view click `Resources` in the left hand navigation bar and then select Secrets.
 
 ![Adding Secret](https://dsc.cloud/quickshare/add-secret.png)
 
@@ -50,7 +50,11 @@ Scroll to the bottom and click `Create`. Back on the overview page you can watch
 
 ![Build running](https://dsc.cloud/quickshare/build-running.png)
 
-When the build has deployed, click the 'External Traffic Route', and you should see the login screen like the following
+If you click the Build # you can watch the progress in real time:
+
+![Watching Build](https://dsc.cloud/quickshare/watch-build.png)
+
+When the build has finished and our application has been deployed, click the 'External Traffic Route', and you should see the word database app in all its glory.
 
 ![Dictionary App](https://dsc.cloud/quickshare/front-end-app.png)
 
@@ -58,8 +62,10 @@ Congrats! You've deployed a `Node.js` app to OpenShift using OpenShift Source-to
 
 ## Understanding What Happened
 
-[S2I](https://docs.openshift.com/container-platform/3.6/architecture/core_concepts/builds_and_image_streams.html#source-build) is a framework that creates container images from source code, then runs the assembled images as a containers. It allows developers to build reproducible images easily, letting them spend time on what matters most, developing their code!
+ - We created a new Project (think of this in terms of Kubernetes namespaces)
+ - We bound a connection string from our ICD Etcd instance to the Project and exposed it as a `Secret`
+ - We used [S2I](https://docs.openshift.com/container-platform/3.6/architecture/core_concepts/builds_and_image_streams.html#source-build) to build our container from a Github repository. 
+ - We customized our application to add in the ICD connection string as a `Secret` 
+ - We deployed our application which added a service and external route. 
+ 
 
-## Git Webhooks
-
-(do we want to include this from normal 101 given the time frame - https://github.com/IBM/openshift101/tree/master/workshop/exercise-1#git-webhooks)

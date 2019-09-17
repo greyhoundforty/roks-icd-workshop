@@ -6,11 +6,11 @@ In this exercise, we'll explore the out-of-the-box logging and monitoring capabi
 
 Since we only created one pod, seeing our logs will be straight forward. Navigate to `Applications > Pods` menu on the left on the console. You'll see two pods here, one for the build \(that's already :heavy_check_mark: Completed\), and one for the pod that is running your application.
 
-![Pods](#)
+![Pods](https://dsc.cloud/quickshare/pods.png)
 
 Click into the `Running` pod and navigate to the `Logs` tab. You should see the Node.js application start-up logs, as well as periodic logs from your curl loop.
 
-![Logs](#)
+![Logs](https://dsc.cloud/quickshare/pod-logs.png)
 
 ## OpenShift Terminal
 
@@ -25,7 +25,7 @@ $ ls
 $ ps aux
 ```
 
-![Terminal](#)
+![Terminal](https://dsc.cloud/quickshare/pod-terminal.png)
 
 ## OpenShift Monitoring
 
@@ -33,6 +33,6 @@ When deploying new apps, making configuration changes, or simply inspecting the 
 
 You can also dive in a bit deeper - the `Events` view is very useful for identifying the timeline of events and finding potential error messages. Hit the 'View Details' button on the top right.
 
-![View Details](#)
+![View Details](https://dsc.cloud/quickshare/deploy-events.png)
 
 You'll want to refer to this view throughout the lab. Almost all actions we take in in OpenShift will result in an event being fired in this view. As it is updated real-time, it's a great way to track changes to state.

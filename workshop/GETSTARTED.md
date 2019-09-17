@@ -10,7 +10,7 @@ In this section, you will login to your own IBM Cloud account, and then get acce
 
     ![Get Clusters App](https://dsc.cloud/quickshare/Shared-Image-2019-09-16-09-53-30.png)
 
-4. You will be added to the IBM Lab account and granted access to a cluster. Note the name of your cluster. It will be something like: `myclusterXXX`.
+4. You will be added to the IBM Lab account and granted access to a cluster. Note the name of your cluster. It will be something like: `roks-xx`.
 
 5. Refresh your [IBM Cloud Dashboard](https://cloud.ibm.com)
 

@@ -10,16 +10,17 @@ In this lab we'll cover using the OpenShift platform on the IBM Cloud and the co
  - OpenShift Basics
  - Deploying an IBM Cloud Database 
  - Deploying an application
-    - Source-to-Image (s2i)
+   - Source-to-Image (s2i)
  - Reading logs and monitoring the application
-    - Console Logs
-    - Terminal logs 
+   - Console Logs
+   - Terminal logs 
  - Grafana
  - Scaling the application
-    - Resource Limits
-    - Horizontal Pod Autoscaler
+   - Resource Limits
+   - Horizontal Pod Autoscaler
  - Health Checks
-    - Introduce failure
+   - Setting up Liveness and Readiness Probes
+   - Introducing failure 
 
 ## Hands On
 * [Deploy ICD Instance](ICD.md)
@@ -30,3 +31,4 @@ In this lab we'll cover using the OpenShift platform on the IBM Cloud and the co
 * [Exercise 2: Logging and Monitoring](exercise-2/README.md)
 * [Exercise 3: Metrics and Dashboards](exercise-3/README.md)
 * [Exercise 4: Autoscale Pods](exercise-4/README.md)
+* [Exercise 5: Liveness and Readiness Probes](exercise-5/README.md)

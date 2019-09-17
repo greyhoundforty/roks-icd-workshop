@@ -1,20 +1,41 @@
-# Currently
+# Hands on with OpenShift on IBM Cloud
 
-## Done ahead would be best
- - [ ] Lab user deploys an ICD instance on their account
- - [ ] Lab user goes to the grant cluster app and requests a cluster 
+This is the repository for the ROKS + ICD workshop presented by IBM
 
-## Lab
- - [ ] Log in to IBM Cloud and find workshop cluster
- - [ ] Log in to OpenShift cluster UI 
- - [ ] Create a project 
- - [ ] Add ICD secret to project
- - [ ] Deploy using service catalog 
- - [ ] Test sample app
+- [workshop](./workshop) -- the vanilla code for the code of the workshop
 
- ## OpenShift Exploration
-  - [ ] Logging and Monitoring 
-  - [ ] Auto-scaling Pods
-  - [ ] ?
+## Other IBM Workshops
+
+Many people and groups worked on the following workshops and classes, parts of which have ended up here.
+
+* https://github.com/beemarie/kube-code-camp
+* https://gitlab.com/ibm/kube101
+* https://github.com/ibm/kube101
+* https://github.com/ibm/istio101
+
+
+## License & Authors
+
+If you would like to see the detailed LICENCE click [here](./LICENCE).
+
+- Author: Sai Vennam <svennam@us.ibm.com>, IBM Cloud Offering Manager
+- Maintainers: Developer Advocates from IBM Cloud
+
+```text
+Copyright:: 2019- IBM, Inc
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+
 
   

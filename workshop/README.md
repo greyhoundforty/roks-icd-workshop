@@ -22,11 +22,11 @@ In this lab we'll cover using the OpenShift platform on the IBM Cloud and the co
     - Introduce failure
 - Readiness and Liveness Probes (maybe?)
 
-* **Hands On**
-    * [Deploy ICD Instance](ICD.md)
-    * [Create account and get cluster](GETSTARTED.md)
-    * [Setup CLI Access for the cluster](exercise-0/README.md)
-    * [Exercise 1: Using OpenShift](exercise-1/README.md)
-    * [Exercise 2: Metrics and Dashboards](exercise-2/README.md)
-    * [Exercise 3: Autoscale Pods](exercise-3/README.md)
-    * [Exercise 4: Liveness and Readiness Probes or health checks](exercise-4/README.md) 
+## Hands On
+* [Deploy ICD Instance](ICD.md)
+* [Create account and get cluster](GETSTARTED.md)
+* [Setup CLI Access for the cluster](exercise-0/README.md)
+* [Exercise 1: Using OpenShift](exercise-1/README.md)
+* [Exercise 2: Metrics and Dashboards](exercise-2/README.md)
+* [Exercise 3: Autoscale Pods](exercise-3/README.md)
+* [Exercise 4: Liveness and Readiness Probes or health checks](exercise-4/README.md) 

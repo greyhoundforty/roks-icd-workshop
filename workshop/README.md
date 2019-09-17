@@ -22,7 +22,7 @@ In this lab we'll cover using the OpenShift platform on the IBM Cloud and the co
     - Introduce failure
 - Readiness and Liveness Probes (maybe?)
 
-* [Workshop](README.md)
+* **Hands On**
     * [Deploy ICD Instance](ICD.md)
     * [Create account and get cluster](GETSTARTED.md)
     * [Setup CLI Access for the cluster](exercise-0/README.md)

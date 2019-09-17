@@ -20,11 +20,11 @@ In this lab we'll cover using the OpenShift platform on the IBM Cloud and the co
     - Horizontal Pod Autoscaler
  - Health Checks
     - Introduce failure
-- Readiness and Liveness Probes (maybe?)
 
 ## Hands On
 * [Deploy ICD Instance](ICD.md)
 * [Create account and get cluster](GETSTARTED.md)
+* [Create ICD Credentials](CREATE_CREDS.md)
 * [Setup CLI Access for the cluster](exercise-0/README.md)
 * [Exercise 1: Using OpenShift](exercise-1/README.md)
 * [Exercise 2: Logging and Monitoring](exercise-2/README.md)

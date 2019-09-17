@@ -19,7 +19,7 @@ In order for our frontend Node.js app to authenticate with our ICD instance we'l
 
 Click `Create Secret` in the upper right hand of the screen and fill in the following:
  - Secret Type = Generic Secret
- - Secret Name = Unique name for your secret
+ - Secret Name = YOUR_SECRET_NAME
  - Key = `binding`
  - In the provided text box paste in the ICD service credentials that you created earlier. It should begin with `{ "connection": {`
 
@@ -41,7 +41,7 @@ Click through to the second step for configuration. Select your project, give yo
 Under the **Context Dir** section put in `/site` and then scroll down until you get to **Deployment Configuration** section. Click the `Add Value from Config Map or Secret` button. 
 
  - Name = `BINDING`
- - Select a Resource = Secret Name
+ - Select a Resource = YOUR_SECRET_NAME
  - Key = `binding`
 
 ![Binding ICD secret to application](https://dsc.cloud/quickshare/add-binding-to-app.png)

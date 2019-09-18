@@ -6,8 +6,8 @@ Red Hat OpenShift represents a common platform, based on the industry-standard K
 
 In this lab we'll cover using the OpenShift platform on the IBM Cloud and the common developer loop around cloud native applications including:
 
-* Kubernetes Basics
 * OpenShift Basics
+* IBM Cloud Database Basics (DBaaS)
 * [Deploy ICD Instance](ICD.md)
 * [Create account and get cluster](GETSTARTED.md)
 * [Create ICD Credentials](CREATE_CREDS.md)
@@ -28,5 +28,5 @@ In this lab we'll cover using the OpenShift platform on the IBM Cloud and the co
 * [Exercise 5: Liveness and Readiness Probes](exercise-5/README.md)
    * Setting up Liveness and Readiness Probes
    * Introducing failure 
-
+* [Wrap Up](WRAP_UP.md)
 

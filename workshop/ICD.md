@@ -1,4 +1,7 @@
 # Deploy ICD instances 
+
+You must already have an IBM account in order to create an ICD Instance.
+
 Deploy an instance of the [Databases for Etcd](https://cloud.ibm.com/catalog/services/databases-for-etcd) service. For this example you can use the `lite` plan. If you have already provisioned a lite version of Etcd you will need to change `lite` to `standard`.
 
 

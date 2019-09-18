@@ -4,7 +4,7 @@ In this exercise, we'll explore the out-of-the-box logging and monitoring capabi
 
 ## OpenShift Logging
 
-Since we only created one pod, seeing our logs will be straight forward. Navigate to `Applications > Pods` menu on the left on the console. You'll see two pods here, one for the build \(that's already :heavy_check_mark: Completed\), and one for the pod that is running your application.
+Since we only created one pod, seeing our logs will be straight forward. Navigate to `Applications > Pods` menu on the left on the console. You'll see two pods here, one for the build \(marked as Completed\), and one for the pod that is running your application.
 
 ![Pods](https://dsc.cloud/quickshare/pods.png)
 

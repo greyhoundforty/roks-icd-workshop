@@ -11,7 +11,7 @@ In this lab we'll cover using the OpenShift platform on the IBM Cloud and the co
 * [Deploy ICD Instance](ICD.md)
 * [Create account and get cluster](GETSTARTED.md)
 * [Create ICD Credentials](CREATE_CREDS.md)
-* [Setup CLI Access for the cluster](exercise-0/README.md)
+* [Setup CLI Access for the cluster (optional)](exercise-0/README.md)
 * [Exercise 1: Using OpenShift](exercise-1/README.md)
    * Creating a project
    * Adding a Secret to a project
@@ -29,4 +29,3 @@ In this lab we'll cover using the OpenShift platform on the IBM Cloud and the co
    * Setting up Liveness and Readiness Probes
    * Introducing failure 
 * [Wrap Up](WRAP_UP.md)
-

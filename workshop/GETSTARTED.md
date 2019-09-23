@@ -10,7 +10,7 @@ In this section, you will login to your own IBM Cloud account, and then get acce
 
     ![Get Clusters App](https://dsc.cloud/quickshare/Shared-Image-2019-09-16-09-53-30.png)
 
-4. You will be added to the IBM Lab account and granted access to a cluster. Note the name of your cluster. It will be something like: `roks-xx`.
+4. You will be added to the IBM Lab account and granted access to a cluster. Note the name of your cluster. It will be something like: `roksd10-xx` or `roksd12-xx`.
 
     ![Cluster assigned](https://dsc.cloud/quickshare/cluster-assigned.png)
 
@@ -33,4 +33,4 @@ In this section, you will login to your own IBM Cloud account, and then get acce
 <!-- put the vcpi URL here -->
 [vcpi_code]: https://cloud.ibm.com
 <!-- put the grant cluster URL here -->
-[grant_cluster]: http://roks-icd-lab.mybluemix.net
+[grant_cluster]: https://roks-lab.mybluemix.net

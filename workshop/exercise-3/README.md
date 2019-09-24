@@ -45,9 +45,11 @@ Navigating back to the cluster console, you can also launch:
 ![Metrics, Alerts and Dashboards](https://dsc.cloud/quickshare/metrics.png)
 
 ## Prometheus
+Monitoring is obviously an important part of managing applications deployed within your OpenShift Cluster. OpenShift includes [Prometheus](https://prometheus.io/docs/introduction/overview/) baked in. Prometheus is a powerful open-source monitoring tool that can pull in metrics from various sources and store them in a time-series database. It offers a powerful query language and the ability to visualize data using third-party tools like the aforementioned Grafana.
 
 ![Prometheus](https://dsc.cloud/quickshare/prometheus-graph.png)
 
 ## Alertmanager
+Alerting with Prometheus is separated into two parts. Alerting rules in Prometheus servers send alerts to the [Alertmanager](https://prometheus.io/docs/alerting/alertmanager). The Alertmanager then manages those alerts, including silencing, inhibition, aggregation and sending out notifications via methods such as email, on-call notification systems, and chat platforms.
 
 ![Alert Manager](https://dsc.cloud/quickshare/alertmanager.png)

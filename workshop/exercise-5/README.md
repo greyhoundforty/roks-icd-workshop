@@ -12,13 +12,13 @@ Add a readiness probe:
 
 ![Readiness](https://dsc.cloud/quickshare/readiness-probe.png)
 
-We'll put `/healthz` as the path and leave the port as `8080`.
+We'll put `/healthz` as the path and leave the port as `8080`. The app is a little heavy upon initialization so we'll set our Intial Delay to 30 seconds and our timeout to 2 seconds. In a production environment the Initial Delay would probably be closer to 5. 
 
 Add a liveness probe:
 
 ![Liveness](https://dsc.cloud/quickshare/liveliness-probe.png)
 
-Again, we'll put `/healthz` as the path and leave the port as `8080`. Scroll to the bottom and Click Save.
+Again, we'll put `/healthz` as the path and leave the port as `8080`. Again we'll set our Intial Delay to 30 seconds and our timeout to 2 seconds. Scroll to the bottom and Click Save.
 
 If all works, everything should be the same. Let's check that the probes are really working though.
 

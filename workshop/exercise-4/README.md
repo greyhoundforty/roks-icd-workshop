@@ -5,8 +5,7 @@ In order to see autoscaling in action we'll do the following:
  - Configure resource limitations for our application 
  - Configure an autoscaling policy to meet demand
 
-
-![](https://dsc.cloud/quickshare/application-project-selection.png)
+![Select Application Console](https://dsc.cloud/quickshare/application-project-selection.png)
 
 ## Enable Resource Limits
 Before we can setup autoscaling for our pods, we first need to set resource limits on the pods running in our cluster. Limits allows you to choose the minimum and maximum CPU and memory usage for a pod.
@@ -21,7 +20,7 @@ Hopefully you have your running script simulating load, Grafana showed you that 
 
 With the changes made, click Save at the bottom of the screen. Back on the Deployments page you should now see that our pods are redeploying:
 
-![](https://dsc.cloud/quickshare/resource-change-deploy.png)
+![Deploy change](https://dsc.cloud/quickshare/resource-change-deploy.png)
  
 ## Enable Autoscaling
 Now that we have resource limits, let's enable autoscaler. Go back to the deployment, but this time choose `Actions > Edit Autoscaler`.

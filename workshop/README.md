@@ -29,3 +29,6 @@ In this lab we'll cover using the OpenShift platform on the IBM Cloud and the co
    * Setting up Liveness and Readiness Probes
    * Introducing failure 
 * [Wrap Up](WRAP_UP.md)
+* [Supplemental Content](exercise-6/README.md)
+   * Deploying an application via the `oc` CLI
+   * Adding Github Webhooks integration

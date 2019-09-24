@@ -11,3 +11,4 @@
     * [Exercise 4: Autoscale Pods](exercise-4/README.md)
     * [Exercise 5: Liveness and Readiness Probes](exercise-5/README.md)
     * [Wrap Up](WRAP_UP.md)
+    * [Supplemental Content](exercise-6/README.md)

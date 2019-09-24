@@ -8,7 +8,7 @@ Since we only created one pod, seeing our logs will be straight forward. Navigat
 
 ![Pods](https://dsc.cloud/quickshare/pods.png)
 
-Click into the `Running` pod and navigate to the `Logs` tab. You should see the Node.js application start-up logs, as well as periodic logs from your curl loop.
+Click into the `Running` pod and navigate to the `Logs` tab. You should see the Node.js application start-up logs.
 
 ![Logs](https://dsc.cloud/quickshare/pod-logs.png)
 

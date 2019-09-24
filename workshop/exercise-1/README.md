@@ -64,7 +64,7 @@ Congrats! You've deployed a `Node.js` app to OpenShift using OpenShift Source-to
 
  - We created a new Project (think of this in terms of Kubernetes namespaces)
  - We bound a connection string from our ICD Etcd instance to the Project and exposed it as a `Secret`
- - We used [S2I](https://docs.openshift.com/container-platform/3.6/architecture/core_concepts/builds_and_image_streams.html#source-build) to build our container from a Github repository. 
+ - We used [S2I](https://docs.openshift.com/container-platform/3.11/architecture/core_concepts/builds_and_image_streams.html#source-build) to build our container from a Github repository. 
  - We customized our application to add in the ICD connection string as a `Secret` 
  - We deployed our application which added a service and external route. 
  

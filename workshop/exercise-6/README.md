@@ -35,6 +35,8 @@ $ oc new-app openshift/nodejs:10~https://github.com/greyhoundforty/health-app-s2
     Run 'oc status' to view your app.
 ```
 
+This will create an ImageStream, Deployment, a Pod, and a Service resource for the example Health app.
+
 ### Check on status 
 We can check on the status of the application by using the `status` command. Throwing the `--suggest` flag will look at your current rollout and make suggestions on ways to fix any possible issues. In this case it is suggesting that we add a rediness and liveness probe. 
 

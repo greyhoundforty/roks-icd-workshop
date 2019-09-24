@@ -7,7 +7,7 @@ First, let's simulate some load on the application so we can gather metrics in G
 
 
 ```bash
-while sleep 1; do curl -s <your_app_route>/info ; done
+while sleep 1; do curl -s <your_app_route>/info > /dev/null 2>&1; done
 ```
 
 *Note: Retrieve the external URL from the OpenShift console. 
